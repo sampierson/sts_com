@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'page_specific_js'
 gem 'meta-tags', :require => 'meta_tags'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.
