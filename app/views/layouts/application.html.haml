@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    = render :partial => 'layouts/head'
+  %body.application_layout{ :class => body_css_classes, :'data-controller_name' => underscored_controller_name, :'data-action_name' => action_name }
+    #wrapper
+      #main.container
+        %header
+          = render 'layouts/header'
+        = content_for :breadcrumbs
+        = render 'layouts/flash', :flash => flash
+        #content
+          = yield
+      #push-footer-down
+    %footer.footer
+      = render :partial => 'layouts/footer'
+    #load-javascripts
+      = javascript_include_tag 'application'

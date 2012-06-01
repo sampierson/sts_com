@@ -1,0 +1,5 @@
+- unless flash.nil?
+  - flash.each do |type, msg|
+    .alert{ :class => "alert-#{type == :notice ? 'success' : 'error'}" }
+      %a.close{ :'data-dismiss' => 'alert' }x
+      = msg.gsub("\n", "<br>").html_safe

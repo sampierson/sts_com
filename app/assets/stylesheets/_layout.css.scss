@@ -1,0 +1,43 @@
+// Sticky Footer
+
+$footer-content-height: 20px;
+$footer-padding: 4px;
+$footer-margin: 15px;
+$footer-border-height: 1px;
+$footer-height: $footer-content-height + 2 * $footer-padding + $footer-margin + $footer-border-height;
+
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -$footer-height;
+  #push-footer-down {
+    height: $footer-height;
+  }
+}
+
+footer {
+  clear: both;
+  position: relative;
+  height: $footer-content-height;
+  border-top: $footer-border-height solid black;
+  padding: $footer-padding 0;
+  margin-top: $footer-margin;
+  text-align: center;
+  background-color: $color-dove-gray;
+  color: $color-silver;
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 980px) {
+  #main {
+    padding-top: 60px;
+  }
+}

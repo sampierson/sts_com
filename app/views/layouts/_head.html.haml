@@ -1,0 +1,7 @@
+= display_meta_tags :site => site_title_helper, :reverse => true
+/[if lt IE 9]
+  = javascript_include_tag 'http://html5shim.googlecode/svn/trunk/html5.js'
+= stylesheet_link_tag  'application', :media => 'all'
+= csrf_meta_tags
+%meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+%meta{:charset => "utf-8"}

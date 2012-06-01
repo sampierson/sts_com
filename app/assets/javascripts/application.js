@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require page_specific
+//= require SpareTimeStartups
+//= require_tree ./pages
