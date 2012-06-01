@@ -23,6 +23,7 @@ end
 
 group :deveopment, :test do
   gem 'rspec-rails'
+  gem 'debugger'
 end
 
 # To use ActiveModel has_secure_password
