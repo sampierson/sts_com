@@ -5,3 +5,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 StsCom::Application.load_tasks
+
+def execute(command)
+  puts "executing: #{command}"
+  puts %x[ #{command} ]
+  raise "Command \"#{command}\" returned exit code #{$?.exitstatus}" unless $?.success?
+end

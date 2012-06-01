@@ -27,6 +27,7 @@ end
 group :deveopment, :test do
   gem 'rspec-rails'
   gem 'debugger'
+  gem 'heroku'
 end
 
 # To use ActiveModel has_secure_password
