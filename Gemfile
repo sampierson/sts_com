@@ -39,3 +39,11 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# Gems to exclude when using Linux
+# Use: bundle install --without osxtest
+group :osxtest do
+   gem 'autotest'
+   gem 'autotest-rails-pure'
+   gem 'autotest-fsevent'
+end

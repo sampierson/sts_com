@@ -22,11 +22,11 @@ on run argv     # the 'on run' is required to read argv, which in this case, is 
   # {"SOLR-TEST",  "rake sunspot:solr:run RAILS_ENV=test"}, ¬
   # {"MYSQL",      "script/dbconsole -p"}, ¬
   # {"BASH",       "rake resque:web"} ¬
-  # {"AUTOTEST",      "autotest -cf"} ¬
 
   set tabs to {¬
     {"CONSOLE",       "rails console"}, ¬
-    {"SERVER",        "rails server"} ¬
+    {"SERVER",        "rails server"}, ¬
+    {"AUTOTEST",      "autotest -cf"} ¬
   }
 
   # tell application "Terminal"
