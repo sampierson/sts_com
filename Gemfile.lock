@@ -76,6 +76,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.18)
     multi_json (1.3.6)
+    page_specific_js (0.0.2)
     pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -153,6 +154,7 @@ DEPENDENCIES
   haml
   haml-rails
   jquery-rails
+  page_specific_js
   pg
   rails (= 3.2.3)
   rspec-rails
